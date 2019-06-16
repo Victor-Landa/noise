@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    cursor: pointer;
+}
+
+.pad1{
+    background: #0DB0FF;
+}
+
+.pad2{
+    background: #4CE84A;
+}
+
+.pad3{
+    background: #FFDF5E;
+}
+
+.pad4{
+    background: #E8694A;
+}
+
+.pad5{
+    background: #B852FF;
+}
+
+.pad6{
+    background: #4E5CFF;
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    transform: scale(1);
+    z-index: -1;
+}
+
+.make:active{
+    background-color: #0DB0FF;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
